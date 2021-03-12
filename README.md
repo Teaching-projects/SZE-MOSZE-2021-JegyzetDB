@@ -1,0 +1,1 @@
+# SZE-MOSZE-2021-JegyzetDB
