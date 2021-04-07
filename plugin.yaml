@@ -1,0 +1,11 @@
+plugin:
+    name: 'szb.jegyzet::lang.plugin.name'
+    description: 'szb.jegyzet::lang.plugin.description'
+    author: szb
+    icon: oc-icon-book
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Jegyzetek
+        url: szb/jegyzet/notecontoller
+        icon: icon-book

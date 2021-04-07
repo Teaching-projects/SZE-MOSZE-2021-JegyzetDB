@@ -1,0 +1,11 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table szb_jegyzet_'
+    - builder_table_create_szb_jegyzet_.php
+1.0.3:
+    - 'Updated table szb_jegyzet_'
+    - builder_table_update_szb_jegyzet_.php
+1.0.4:
+    - 'Updated table szb_jegyzet_'
+    - builder_table_update_szb_jegyzet__2.php

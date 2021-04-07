@@ -1,0 +1,20 @@
+columns:
+    title:
+        label: Cím
+        type: text
+        searchable: true
+        sortable: true
+    author:
+        label: Szerző
+        type: text
+        searchable: true
+        sortable: true
+    appearance:
+        label: Megjelenés
+        type: number
+        searchable: true
+        sortable: true
+    is_pdf:
+        label: 'PDF formátum'
+        type: switch
+        sortable: true
