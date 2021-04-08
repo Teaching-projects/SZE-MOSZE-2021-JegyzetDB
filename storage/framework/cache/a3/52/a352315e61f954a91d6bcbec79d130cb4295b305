@@ -1,0 +1,7 @@
+1617837523a:1:{s:10:"profil.htm";a:11:{s:8:"fileName";s:10:"profil.htm";s:7:"content";s:120:"title = "Profilom"
+url = "/profil/:id"
+layout = "default"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+==";s:5:"mtime";i:1617661494;s:6:"markup";s:0:"";s:4:"code";N;s:5:"title";s:8:"Profilom";s:3:"url";s:11:"/profil/:id";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";}}

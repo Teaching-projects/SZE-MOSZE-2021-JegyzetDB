@@ -1,0 +1,4 @@
+title: Melo
+modelClass: Szb\Melok\Models\Melo
+toolbar:
+    buttons: reorder_toolbar

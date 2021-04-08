@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Form
+
+# Model Form Field configuration
+form: $/szb/contactform/models/form/fields.yaml
+
+# Model Class name
+modelClass: Szb\Contactform\Models\Form
+
+# Default redirect location
+defaultRedirect: szb/contactform/form
+
+# Create page
+create:
+    title: Create Form
+    redirect: szb/contactform/form/update/:id
+    redirectClose: szb/contactform/form
+
+# Update page
+update:
+    title: Edit Form
+    redirect: szb/contactform/form
+    redirectClose: szb/contactform/form
+
+# Preview page
+preview:
+    title: Preview Form

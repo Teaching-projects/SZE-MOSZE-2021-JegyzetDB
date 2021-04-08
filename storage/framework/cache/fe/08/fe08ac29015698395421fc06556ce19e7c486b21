@@ -1,0 +1,8 @@
+1617837523a:1:{s:10:"jomelo.htm";a:11:{s:8:"fileName";s:10:"jomelo.htm";s:7:"content";s:141:"title = "Jómeló"
+url = "/"
+layout = "default"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+==
+{% partial 'sections/addad' %}";s:5:"mtime";i:1617836922;s:6:"markup";s:30:"{% partial 'sections/addad' %}";s:4:"code";N;s:5:"title";s:8:"Jómeló";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";}}
