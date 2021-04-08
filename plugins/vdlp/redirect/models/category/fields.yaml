@@ -1,8 +1,0 @@
-# ===================================
-#  Form Field Definitions
-# ===================================
-
-fields:
-    name:
-        label: vdlp.redirect::lang.redirect.name
-        span: left
