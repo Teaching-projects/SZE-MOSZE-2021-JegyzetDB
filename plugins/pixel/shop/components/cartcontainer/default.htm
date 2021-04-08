@@ -1,0 +1,88 @@
+
+<div class="shop__cart-checkout">
+	<div class="row" id="checkout-container">
+		{% if order %}
+			{% partial '@order_summary' %}
+		{% else %}
+
+		<div class="col-md-4" id="shop__cart-partial">
+			{% partial '@cart' %}
+		</div>
+
+		<div class="col-md-8" id="shop__cart-steps">
+			<form novalidate="" id="form" data-request="onSendCheckout" data-request-flash data-request-validate data-request-complete="Cart.focusToInvalidFields(data)">
+                <input type="hidden" value="{{user}}" id="user">
+                <input type="hidden" value="{{config}}" id="config">
+                <div class="shop__steps">
+                    <h3>{{ 'pixel.shop::component.cart.customer_information'|trans }}</h3>
+                    <div class="step-content">
+                        {% partial '@customer_information' %}
+                    </div>
+
+                    <h3>{{ 'pixel.shop::component.cart.shipping_method'|trans }}</h3>
+                    <div class="step-content">
+                        {% partial '@shipping_address' %}
+                    </div>
+                    <h3>{{ 'pixel.shop::component.cart.complete_order'|trans }}</h3>
+                    <div class="step-content">
+                        {% partial '@billing_address' %}
+
+                        <div class="checkbox">
+                            <label for="same-address">
+                                <input type="checkbox" name="is_ship_same_bill" id="same-address" {% if user.is_ship_same_bill %}checked="checked"{% endif %} data-request="onSameAddressChange" onchange="Cart.checkSameAddress($(this))">
+                                <b>{{ 'pixel.shop::component.cart.is_ship_same_bill'|trans }}</b>
+                            </label>
+                        </div>
+
+                        {% if user %}
+                        <div class="checkbox">
+                            <label class="custom-control-label" for="save-info">
+                                <input type="checkbox" name="is_save_for_later" id="save-info"><b>{{ 'pixel.shop::component.cart.is_save_for_later'|trans }}</b>
+                            </label>
+                        </div>
+                        {% endif %}
+
+                        <legend>{{ 'pixel.shop::component.cart.payment_method'|trans }}</legend>
+
+                        <div class="shop__methods-list">
+                            {% partial '@methods' %}
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="row" id="form-bag">
+                    <div class="col-md-12 text-right">
+                        <hr>
+                        <a href="{{ product_page|page }}" class="btn btn-link btn-back-shopping"><i class="fas fa-shopping-cart"></i> {{ 'pixel.shop::component.cart.continue_shopping'|trans }}</a>
+                        <a href="javascript:;" class="btn btn-link btn-prev" style="display: none">{{ 'pixel.shop::lang.components.cart_prev'|trans }}</a>
+                        <a href="javascript:;" class="btn btn-primary btn-next">{{ 'pixel.shop::lang.components.cart_next'|trans }}</a>
+                        {% if  is_tokenization_active == false  or ( secure == 0 and is_tokenization_active == true) %}
+                        <button class="btn btn-success btn-finish" type="submit" data-attach-loading style="display: none">
+                            <i class="fas fa-credit-card"></i> {{ 'pixel.shop::component.cart.place_order'|trans }} 
+                        </button>                       
+                        {% else %}
+                        <button class="btn btn-success btn-finish" {% if secure == 0 %} {% endif %} onclick="createrOrder()"  type="button" data-attach-loading style="display: none">
+                            <i class="fas fa-credit-card"></i> {{ 'pixel.shop::component.cart.place_order'|trans }} 
+                        </button>
+                        
+                        {% endif %}
+                    </div>
+				</div>
+			</form>
+		</div>
+		
+		{% endif %}
+	</div>
+</div>	
+	
+{% put scripts %}
+<script>
+    jQuery.extend(jQuery.validator.messages, {
+        required: "{{ 'pixel.shop::validation.jquery.required'|trans }}",
+        email: "{{ 'pixel.shop::validation.jquery.email'|trans }}",
+        maxlength: jQuery.validator.format("{{ 'pixel.shop::validation.jquery.maxlength'|trans }}"),
+        minlength: jQuery.validator.format("{{ 'pixel.shop::validation.jquery.minlength'|trans }}"),
+    });
+</script>
+{% endput %}

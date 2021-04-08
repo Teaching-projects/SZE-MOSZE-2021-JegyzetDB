@@ -1,0 +1,36 @@
+fields:
+    title:
+        label: Cím
+        span: left
+        required: 1
+        type: text
+    author:
+        label: Szerző
+        span: left
+        type: text
+    appearance:
+        label: Megjelenés
+        span: left
+        type: number
+    is_pdf:
+        label: 'PDF formátum?'
+        span: left
+        type: switch
+    pdf_file:
+        label: 'PDF feltöltése'
+        mode: file
+        useCaption: 0
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        fileTypes: pdf
+        prompt: Feltöltés
+        type: fileupload
+    slug:
+        label: Slug
+        span: left
+        preset:
+            field: title
+            type: slug
+        type: text

@@ -1,0 +1,10 @@
+name: NoteContoller
+form: $/szb/jegyzet/models/note/fields.yaml
+modelClass: Szb\Jegyzet\Models\Note
+defaultRedirect: szb/jegyzet/notecontoller
+create:
+    redirect: 'szb/jegyzet/notecontoller/update/:id'
+    redirectClose: szb/jegyzet/notecontoller
+update:
+    redirect: szb/jegyzet/notecontoller
+    redirectClose: szb/jegyzet/notecontoller

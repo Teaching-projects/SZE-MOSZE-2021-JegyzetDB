@@ -1,0 +1,9 @@
+subject = To-Do List Reminder: „{{ task_name }}”
+==
+Hello {{ username }},
+
+Your item “{{ task_name }}” is due now.
+
+{% partial 'button' url=task_url body %}
+    View List
+{% endpartial %}
