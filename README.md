@@ -11,3 +11,16 @@
 
 <h2>Feature-04</h2>
 <p>Kereső componens - backend</p>
+
+<h2>Használt technológiák, eszközök</h2>
+  <ul>
+  <li>Frontend: HTML, CSS, JavaScript, jQuery, AJAX </li>
+  <li>Backend: MySQL, Laravel-PHP, OctoberCMS framwork </li>
+  <li>JSON</li>
+  <li>Docker</li>
+  <li>PHP unit testing</li>
+  <li>POSTMAN api tesztelés</li>
+  <li>Github action frontend validálás</li>
+
+  
+  </ul>
