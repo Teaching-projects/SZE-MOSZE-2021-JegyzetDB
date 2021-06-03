@@ -8,8 +8,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Running Page Speed Insights
-        uses: JakePartusch/psi-action@v1
+      - name: Running Page Speed Insights (Mobile)
+        uses: mattorb/psi-action@v1
+        id: psi_mobile
+        with:
+          url: "https://jegyzet.igenyeshonlap.hu"
+          threshold: 40
+          strategy: mobile
+      - name: Running Page Speed Insights (Desktop)
+        uses: mattorb/psi-action@v1
+        id: psi_desktop
         with:
           url: "https://jegyzet.igenyeshonlap.hu"
           threshold: 80
+          strategy: desktop
