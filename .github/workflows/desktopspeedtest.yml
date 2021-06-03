@@ -1,0 +1,8 @@
+steps:
+    - name: Running Page Speed Insights
+      uses: jakepartusch/psi-action@v1.2
+      id: psi
+      with:
+        url: "https://jegyzet.igenyeshonlap.hu"
+        threshold: 80
+        strategy: desktop
