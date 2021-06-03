@@ -1,0 +1,14 @@
+name: Check Site Performance with PageSpeed Insights
+
+on: 
+  push:
+    branches:
+    - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running Page Speed Insights
+        uses: JakePartusch/psi-action@v1
+        with:
+          url: "https://jegyzet.igenyeshonlap.hu"
