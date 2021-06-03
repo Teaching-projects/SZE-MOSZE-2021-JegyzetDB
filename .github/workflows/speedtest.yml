@@ -12,3 +12,4 @@ jobs:
         uses: JakePartusch/psi-action@v1
         with:
           url: "https://jegyzet.igenyeshonlap.hu"
+          threshold: 80
