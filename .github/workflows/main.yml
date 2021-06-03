@@ -14,4 +14,4 @@ jobs:
         server: jegyzet.igenyeshonlap.hu
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /simplewebapp/
+        server-dir: /jegyzet.igenyeshonlap.hu
