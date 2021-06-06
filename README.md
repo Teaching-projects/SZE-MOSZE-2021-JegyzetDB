@@ -7,7 +7,7 @@
 <p>Frontend</p>
 
 <h2>Feature-03</h2>
-<p>Sitemap - SEO</p>
+<p>Docker image - development environment</p>
 
 <h2>Feature-04</h2>
 <p>Kereső componens - backend</p>
