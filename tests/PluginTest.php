@@ -1,4 +1,10 @@
-<?php namespace Szb\Jegyzet\Tests;
+<?php
+
+require_once 'PHPUnit/Autoload.php';
+
+
+
+/** @test */
 /**
 *\Brief 
 *Unit test for my plugin
@@ -8,12 +14,12 @@
 use Szb\Jegyzet\Models\Note;
 use Szb\Jegyzet\Plugin;
 use Cms\Classes\ComponentBase;
-use PluginTestCase;
+use \PHPUnit\Framework\TestCase;
 
 
-class PostTest extends PluginTestCase
+class TestPost extends \PHPUnit\Framework\TestCase
 {
-    public function setUp(): void
+    public function setUpTest(): void
     {
         parent::setUp();
 
