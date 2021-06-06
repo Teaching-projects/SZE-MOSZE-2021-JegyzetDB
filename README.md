@@ -1,7 +1,7 @@
 # Docker + October CMS
 
 A '/weblap' mappába kell klónozni a master branch-et. A docker automatikusan felcsatolja a weblap mappa tartalmát a container környezetébe.
-Adatbázist szükséges külön hozzá igazítani a sandbox szerveren lévőhöz. (XAMP) vagy más MySQL tool-al beállítani.
+Adatbázist szükséges külön hozzá igazítani a sandbox szerveren lévőhöz. (XAMP vagy másik docker containerel) vagy más MySQL tool-al beállítani.
 
 Utána containeren belül a "php artisan october:up" paranccsal lehet-kell, amennyiben szükséges a migrációk lefuttatása.
 
