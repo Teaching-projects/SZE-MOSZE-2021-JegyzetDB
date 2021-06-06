@@ -4,6 +4,19 @@ services:
     image: aspendigital/octobercms
     ports:
       - 80:80
-	  volumes:
-      - ./plugins:/var/www/html/plugins
-      - ./themes:/var/www/html/themes
+    volumes:
+    - ./weblap:/var/www/html
+    environment:
+		- DB_TYPE=mysql
+		- DB_HOST=localhost #DB_HOST should match the service name of the database container
+		- DB_DATABASE=databasename #set_in_XAMP_or_other_DB
+		- DB_USERNAME=root
+		- DB_PASSWORD=root
+
+	mysql:
+	  image: mysql:5.7
+	  ports:
+		- 3306:3306
+	  environment:
+		- MYSQL_ROOT_PASSWORD=root
+		- MYSQL_DATABASE=databasename #set_in_XAMP_or_other_DB
