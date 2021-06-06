@@ -16,6 +16,28 @@ fields:
         label: 'PDF formátum?'
         span: left
         type: switch
+    pdf_file:
+        label: 'PDF feltöltése'
+        mode: file
+        useCaption: 0
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        fileTypes: pdf
+        prompt: Feltöltés
+        type: fileupload
+    image:
+        label: Borítókép
+        mode: image
+        imageWidth: '80'
+        imageHeight: '80'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        type: fileupload
     slug:
         label: Slug
         span: left
@@ -23,3 +45,20 @@ fields:
             field: title
             type: slug
         type: text
+    description:
+        label: Leírás
+        span: left
+        size: ''
+        type: textarea
+tabs:
+    fields:
+        faculty:
+            label: Kar
+            span: left
+            type: text
+            tab: 'Tab 1'
+        subject:
+            label: Tárgy
+            span: right
+            type: text
+            tab: 'Tab 1'

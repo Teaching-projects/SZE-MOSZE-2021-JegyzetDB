@@ -18,3 +18,19 @@ columns:
         label: 'PDF formátum'
         type: switch
         sortable: true
+    created_at:
+        label: created_at
+        type: datetime
+    updated_at:
+        label: updated_at
+        type: datetime
+    faculty:
+        label: faculty
+        type: text
+    subject:
+        label: subject
+        type: text
+    id:
+        label: id
+        type: text
+        sortable: true
