@@ -5,6 +5,10 @@ Adatbázist szükséges külön hozzá igazítani a sandbox szerveren lévőhöz
 
 Utána containeren belül a "php artisan october:up" paranccsal lehet-kell, amennyiben szükséges a migrációk lefuttatása.
 
+A beállítások elvégzése után a 'docker compose up' paranncsal indítható a container, majd 'localhost'-on érhető el.
+
+A default login a cms részbe: 'localhost/backend' - admin@admin
+
 [![Build Status](https://travis-ci.org/aspendigital/docker-octobercms.svg?branch=master)](https://travis-ci.org/aspendigital/docker-octobercms) [![Docker Hub Pulls](https://img.shields.io/docker/pulls/aspendigital/octobercms.svg)](https://hub.docker.com/r/aspendigital/octobercms/) [![October CMS Build 473](https://img.shields.io/badge/October%20CMS%20Build-473-red.svg)](https://github.com/octobercms/october) [![Edge Build 473](https://img.shields.io/badge/Edge%20Build-473-lightgrey.svg)](https://github.com/octobercms/october)
 
 The docker images defined in this repository serve as a starting point for [October CMS](https://octobercms.com) projects.
