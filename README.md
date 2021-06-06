@@ -1,7 +1,7 @@
 # SZE-MOSZE-2021-JegyzetDB
 
 <h2>Feature-01</h2>
-<p>Jegyzetek componens - backend</p>
+<p>Jegyzetek MVC/p>
 
 <h2>Feature-02</h2>
 <p>Frontend</p>
