@@ -1,0 +1,9 @@
+version: '2.2'
+services:
+  web:
+    image: aspendigital/octobercms
+    ports:
+      - 80:80
+	  volumes:
+      - ./plugins:/var/www/html/plugins
+      - ./themes:/var/www/html/themes
