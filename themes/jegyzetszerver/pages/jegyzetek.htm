@@ -1,0 +1,139 @@
+title = "Jegyzetek"
+url = "/jegyzetek/:page?"
+layout = "default"
+is_hidden = 0
+
+[searchForm]
+==
+<?php
+use Szb\Jegyzet\Models\Note;
+
+public function onStart() {
+	$this['faculties'] = Db::table('szb_jegyzet_')->select('faculty')->distinct()->get();
+	$this['subjects'] = Db::table('szb_jegyzet_')->select('subject')->distinct()->get();
+}
+?>
+==
+{# ez a kereső form #} 
+<div class="container my-5">
+	<div class="row">
+			<form>
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-10 text-center">
+						<div class="input-group">
+							<div class="form-outline">
+								<input type="search" id="form1" class="form-control" name="properties" placeholder="Keresés...">
+							</div>
+						</div>
+					</div>	
+
+				<div class="col-lg-3 col-md-3 col-sm-10 text-center">
+					<div class="input-group d-flex justify-content-center mb-3">
+						<select class="selectpicker w-100" data-show-subtext="true" data-live-search="true" name="faculty" placeholder="Kar">
+							<option value="">Bármelyik</option>
+							{% for faculty in faculties %}
+								<option value="{{ faculty.faculty }}">{{ faculty.faculty }}</option>
+							{% endfor %}
+						</select>
+					</div>
+				</div>	
+
+				<div class="col-lg-3 col-md-3 col-sm-10 text-center">
+					<div class="input-group d-flex justify-content-center mb-3">
+						<select class="selectpicker w-100" data-show-subtext="true" data-live-search="true" name="subject" placeholder="Tárgy">
+							<option value="">Bármelyik</option>
+							{% for subject in subjects %}
+								<option value="{{ subject.subject }}">{{ subject.subject }}</option>
+							{% endfor %}
+						</select>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-3 col-sm-10 text-center">
+					<button type="submit" class="btn btn-primary">
+						<i class="fas fa-search"></i>
+					</button>
+				</div>
+
+					
+				</div>
+			</form>
+	</div>
+</div>
+
+
+{# ez listázza ki a találatokat #}  
+
+{% set notes = searchForm.notes %}
+
+<div class="container">
+	<div class="row">
+
+		{% for note in notes %}
+				<div class="col-xl-4 col-lg-4 col-md-6 mb-3">
+					<div class="card mb-3" style="max-width: 540px;">
+		<div class="row g-0">
+			<div class="col-md-4 d-flex justify-content-center align-items-center">
+				<img src="themes/jegyzetszerver/assets/images/Programozás%20I.-II..jpg" class="img-fluid" alt="...">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">Cím: {{ note.title }}</h5>
+					<p>Szerző: {{ note.author }}</p>
+					<p>Tárgy: {{ note.subject }}</p>
+					<p>{{ note.is_pdf == 1 ? 'A jegyzet elérhető PDF-ben' : 'PDF-ben nem elérhető' }}</p>
+ 					<p>Kar: {{ note.faculty }}</p>
+					<p><a href="/jegyzet/{{ note.slug }} ">Jegyzet adatlapjának megtekintése</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+				{#	
+					Cím: {{ note.title }} </br>
+					Szerző: {{ note.author }} </br>
+					Tárgy: {{ note.subject }} </br>
+					PDF ? {{ note.is_pdf }} </br>
+					Kar: {{ note.faculty }} </br>
+					<img src="{{ note.image }}" alt="borító kép"></img> </br>
+					URL: <a href="/jegyzet/{{ note.slug }} ">Jegyzet adatlapjának megtekintése</a> </br>
+					
+					<hr> #}			
+				</div>
+			
+		{% endfor %}
+	</div>
+
+</div>
+
+{% if notes.lastPage > 1 %}
+
+<div class="row pagination mb-5 mt-5 m-0 p-0">
+    <div class="col-12 d-flex justify-content-center">
+	        {% if notes.currentPage > 1 %}
+				<a href="{{ notes.previousPageUrl }}" rel="prev" class="d-inline">
+				<button type="button" class="btn paginer-next-prev">
+	            Előző <i class="fas fa-chevron-left"></i></button>
+				</a>
+	        {% endif %}
+	
+	        {% for page in range(1, notes.lastPage) %}
+				<a href="{{ notes.url(page) }}" class="d-inline">
+				<button type="button"
+	                    class="btn rounded-circle paginer-btn mx-1 {{ notes.currentPage == page ? 'active-btn' : null }}">
+					{{ page }}
+	            </button>
+				</a>
+	
+	        {% endfor %}
+	
+	        {% if notes.hasMorePages %}
+				<a href="{{ notes.nextPageUrl }}" rel="next" class="d-inline">
+				<button type="button"class="btn paginer-next-prev">
+	            Következő <i class="fas fa-chevron-right"></i></button>
+				</a>
+	        {% endif %}   		
+
+    </div>
+</div>
+
+{% endif %}

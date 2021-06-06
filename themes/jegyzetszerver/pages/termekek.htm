@@ -1,0 +1,34 @@
+title = "Termékek"
+url = "/products"
+layout = "default"
+is_hidden = 0
+
+[shopProductsList]
+categoryFilter = "{{ :category }}"
+scope = "showItems"
+limitType = "paginate"
+take = 6
+orderBy = "name"
+sort = "asc"
+productPage = "webshop"
+categoryPage = "kezdolap"
+showCategoriesFilter = 1
+showSearchBar = 1
+showQuickAdd = 1
+typeCategoriesFilter = "dropdown"
+
+[cartContainer]
+productPage = "webshop"
+returnPage = "kosar"
+
+[cartButton]
+cartPage = "kosar"
+colorBG = "#C43730"
+color = "#FFFFFF"
+position = "top-right"
+==
+{% component 'shopProductsList' %}
+
+{% component 'cartContainer' %}
+
+{% component 'cartButton' %}

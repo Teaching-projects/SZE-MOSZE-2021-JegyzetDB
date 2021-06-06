@@ -1,4 +1,0 @@
-title: NoteContoller
-modelClass: Szb\Jegyzet\Models\Note
-toolbar:
-    buttons: reorder_toolbar

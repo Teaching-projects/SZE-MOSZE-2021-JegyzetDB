@@ -1,0 +1,10 @@
+title = "webshop"
+url = "/webshop/:slug"
+layout = "default"
+is_hidden = 0
+
+[shopProductsDetails]
+slug = "{{ :slug }}"
+productsPage = "products"
+==
+{% component 'shopProductsDetails' %}

@@ -1,0 +1,77 @@
+.paginer-btn {
+    background-color: #a0ce4e;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 40px;
+
+    &:hover {
+        background-color: #11122c;
+        color: white;
+        box-shadow: none;
+    }
+}
+
+.paginer-next-prev {
+    height: 38px;
+    width: 120px;
+    background-color: #a0ce4e;
+    color: white;
+    border: none;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    &:hover {
+        background-color: #11122c;
+        color: white;
+    }
+}
+
+.active-btn {
+    background-color: black;
+    color: white;
+}
+
+.package-btn {
+	background-color: #A0CE4E;
+	color: white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+	bottom: 0;
+	font-size: 18px;
+	&:hover {
+		color: white;
+		background-color: #80a43e;
+	}
+}
+
+.btn, input {
+	box-shadow: none !important;
+	outline: none !important;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	&:hover {
+		text-decoration: none;
+		color: black;		
+	}
+}
+.bg-gray {
+	background-color: #808080;
+}
+.bg-footer {
+	background-color: #1B2D40;
+}
+.bottom-border {
+	border-bottom: 1px solid white;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=file] {
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
