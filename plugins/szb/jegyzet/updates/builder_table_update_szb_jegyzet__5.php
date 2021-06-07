@@ -9,7 +9,8 @@ class BuilderTableUpdateSzbJegyzet5 extends Migration
     {
         Schema::table('szb_jegyzet_', function($table)
         {
-            $table->binary('pdf_file')->nullable();
+            $table->string('faculty')->nullable();
+            $table->string('subject')->nullable();
         });
     }
     
@@ -17,7 +18,8 @@ class BuilderTableUpdateSzbJegyzet5 extends Migration
     {
         Schema::table('szb_jegyzet_', function($table)
         {
-            $table->dropColumn('pdf_file');
+            $table->dropColumn('faculty');
+            $table->dropColumn('subject');
         });
     }
 }

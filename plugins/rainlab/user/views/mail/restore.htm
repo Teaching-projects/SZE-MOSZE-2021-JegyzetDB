@@ -3,20 +3,26 @@ description = "User requests a password reset"
 ==
 Hello {{ name }}
 
-Somebody has requested a password reset for your account, if this was not you, please ignore this email.
+Üdvzöljük kedves {{ name }}!
 
-Use this activation code to restore your password:
+Jelszó visszaállítási kérelem érkezett fiókjához. Amennyiben nem Ön kezdeményezte, kérjük hagyja figyelmen kívül az üznetetet. <br>
+
+Új jelszó igénylése
+
+
+Használja az alábbi adatokat a jelszó visszaállításához
 
 {% partial 'promotion' body %}
 {{ code }}
 {% endpartial %}
 
-You can use the following link:
+
+Kövesse az alábbi linket:
 
 {% partial 'button' url=link type='positive' body %}
-Restore password
+Jelszó visszaállítása
 {% endpartial %}
 
 {% partial 'subcopy' body %}
-    **This is an automatic message. Please do not reply to it.**
+    **Ez egy automatikus válaszüzenet. Kérjük ne válaszoljon rá!**
 {% endpartial %}

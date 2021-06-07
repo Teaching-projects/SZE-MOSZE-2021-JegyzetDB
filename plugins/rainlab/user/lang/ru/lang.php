@@ -63,6 +63,9 @@ return [
         'unban_selected_confirm' => 'Разблокировать выбранных пользователей?',
         'unban_selected_empty' => 'Нет выбранных пользователей для разблокировки.',
         'unban_selected_success' => 'Выбранные пользователи успешно разблокированы.',
+        'unsuspend' => 'Приостановлен',
+        'unsuspend_success' => 'Пользователь был приостановлен.',
+        'unsuspend_confirm' => 'Приостановить данного пользователя?'
     ],
     'settings' => [
         'users' => 'Пользователи',
@@ -127,6 +130,7 @@ return [
         'details' => 'Информация',
         'account' => 'Аккаунт',
         'block_mail' => 'Отключить всю исходящую почту для этого пользователя.',
+        'status_label' => 'Статус',
         'status_guest' => 'Гость',
         'status_activated' => 'Активирован',
         'status_registered' => 'Зарегистрирован',

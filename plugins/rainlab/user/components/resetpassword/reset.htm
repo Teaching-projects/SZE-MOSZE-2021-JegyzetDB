@@ -1,19 +1,19 @@
 <p class="lead">
-    Please check your email for the activation code.
+    Ellenőrizze email fiókját az aktivációs kódhoz.
 </p>
 
 <form
     data-request="{{ __SELF__ }}::onResetPassword"
     data-request-update="'{{ __SELF__ }}::complete': '#partialUserResetForm'">
-    <div class="form-group">
-        <label for="resetCode">Activation Code</label>
-        <input name="code" type="text" class="form-control" id="resetCode" placeholder="Enter the activation code" value="{{ __SELF__.code }}">
+    <div class="form-group p-2 mb-2">
+        <label for="resetCode">aktivációs kód</label>
+        <input name="code" type="text" class="form-control" id="resetCode" placeholder="Adja meg aktivációs kódját" value="{{ __SELF__.code }}">
     </div>
 
-    <div class="form-group">
-        <label for="resetPassword">New Password</label>
-        <input name="password" type="password" class="form-control" id="resetPassword" placeholder="Enter a new password">
+    <div class="form-group p-2 mb-2">
+        <label for="resetPassword">Új jelszó</label>
+        <input name="password" type="password" class="form-control" id="resetPassword" placeholder="Adja meg új jelszavát">
     </div>
 
-    <button type="submit" class="btn btn-default">Reset password</button>
+    <button type="submit" class="btn btn-primary mt-2">Jelszó visszaállítása</button>
 </form>

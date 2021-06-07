@@ -1,53 +1,53 @@
 {% if canRegister %}
-    <h3>Register</h3>
+    <h3>Regisztráció</h3>
 
     {{ form_ajax('onRegister') }}
 
-        <div class="form-group">
-            <label for="registerName">Full Name</label>
+        <div class="form-group p-2 mb-2">
+            <label for="registerName">Teljes név</label>
             <input
                 name="name"
                 type="text"
                 class="form-control"
                 id="registerName"
-                placeholder="Enter your full name" />
+                placeholder="Adja meg teljes nevét!" />
         </div>
 
-        <div class="form-group">
+        <div class="form-group p-2 mb-2">
             <label for="registerEmail">Email</label>
             <input
                 name="email"
                 type="email"
                 class="form-control"
                 id="registerEmail"
-                placeholder="Enter your email" />
+                placeholder="Adja meg email címét" />
         </div>
 
         {% if loginAttribute == "username" %}
-            <div class="form-group">
-                <label for="registerUsername">Username</label>
+            <div class="form-group p-2 mb-2">
+                <label for="registerUsername">Felhasználónév</label>
                 <input
                     name="username"
                     type="text"
                     class="form-control"
                     id="registerUsername"
-                    placeholder="Enter your username" />
+                    placeholder="Adja meg felhasználónevét" />
             </div>
         {% endif %}
 
-        <div class="form-group">
-            <label for="registerPassword">Password</label>
+        <div class="form-group p-2 mb-2">
+            <label for="registerPassword">Jelszó</label>
             <input
                 name="password"
                 type="password"
                 class="form-control"
                 id="registerPassword"
-                placeholder="Choose a password" />
+                placeholder="Válasszon jelszót" />
         </div>
 
-        <button type="submit" class="btn btn-default">Register</button>
+        <button type="submit" class="btn btn-primary mt-2">Regisztráció</button>
 
     {{ form_close() }}
 {% else %}
-    <!-- Registration is disabled. -->
+    <!-- Regisztráció jelenlg nem elérhető. -->
 {% endif %}

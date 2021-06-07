@@ -10,8 +10,8 @@
     - 'Updated table szb_jegyzet_'
     - builder_table_update_szb_jegyzet__2.php
 1.0.5:
-    - 'Created table szb_jegyzet_'
-    - builder_table_create_szb_jegyzet__2.php
+    - 'Updated table szb_jegyzet_'
+    - builder_table_update_szb_jegyzet_.php
 1.0.6:
     - 'Updated table szb_jegyzet_'
     - builder_table_update_szb_jegyzet__4.php

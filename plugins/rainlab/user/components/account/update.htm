@@ -1,33 +1,33 @@
 {{ form_ajax('onUpdate') }}
 
-    <div class="form-group">
-        <label for="accountName">Full Name</label>
+    <div class="form-group p-2 mb-2">
+        <label for="accountName">Teljes név</label>
         <input name="name" type="text" class="form-control" id="accountName" value="{{ user.name }}">
     </div>
 
-    <div class="form-group">
+    <div class="form-group p-2 mb-2">
         <label for="accountEmail">Email</label>
         <input name="email" type="email" class="form-control" id="accountEmail" value="{{ user.email }}">
     </div>
 
-    <div class="form-group">
-        <label for="accountPassword">New Password</label>
+    <div class="form-group p-2 mb-2">
+        <label for="accountPassword">Új jelszó</label>
         <input name="password" type="password" class="form-control" id="accountPassword">
     </div>
 
-    <div class="form-group">
-        <label for="accountPasswordConfirm">Confirm New Password</label>
+    <div class="form-group p-2 mb-2">
+        <label for="accountPasswordConfirm">Jelszó megerősítése</label>
         <input name="password_confirmation" type="password" class="form-control" id="accountPasswordConfirm">
     </div>
 
     {% if updateRequiresPassword %}
-        <p>To change these details, please confirm your current password.</p>
-        <div class="form-group">
-            <label for="accountPasswordCurrent">Current Password <small class="text-danger">* required</small></label>
+        <p>A változtatásokhoz adja meg újra jelszavát</p>
+        <div class="form-group p-2 mb-2">
+            <label for="accountPasswordCurrent">Aktuális jelszó <small class="text-danger">* required</small></label>
             <input name="password_current" type="password" class="form-control" id="accountPasswordCurrent">
         </div>
     {% endif %}
 
-    <button type="submit" class="btn btn-default">Save</button>
+    <button type="submit" class="btn btn-primary m-2 mb-5">Mentés</button>
 
 {{ form_close() }}

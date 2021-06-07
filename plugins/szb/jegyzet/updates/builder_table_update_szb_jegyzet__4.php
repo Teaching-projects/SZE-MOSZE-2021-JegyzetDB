@@ -9,7 +9,6 @@ class BuilderTableUpdateSzbJegyzet4 extends Migration
     {
         Schema::table('szb_jegyzet_', function($table)
         {
-            $table->timestamp('deleted_at')->nullable();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
         });
@@ -19,7 +18,6 @@ class BuilderTableUpdateSzbJegyzet4 extends Migration
     {
         Schema::table('szb_jegyzet_', function($table)
         {
-            $table->dropColumn('deleted_at');
             $table->dropColumn('created_at');
             $table->dropColumn('updated_at');
         });

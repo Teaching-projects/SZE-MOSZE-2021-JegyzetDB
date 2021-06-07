@@ -9,8 +9,7 @@ class BuilderTableUpdateSzbJegyzet extends Migration
     {
         Schema::table('szb_jegyzet_', function($table)
         {
-            $table->date('created_at');
-            $table->date('updated_at');
+           // $table->text('description')->nullable();
         });
     }
     
@@ -18,8 +17,7 @@ class BuilderTableUpdateSzbJegyzet extends Migration
     {
         Schema::table('szb_jegyzet_', function($table)
         {
-            $table->dropColumn('created_at');
-            $table->dropColumn('updated_at');
+            //$table->dropColumn('description');
         });
     }
 }

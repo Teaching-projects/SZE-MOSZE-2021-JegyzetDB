@@ -1,33 +1,33 @@
 {{ form_ajax('onSignin') }}
 
-    <div class="form-group">
+    <div class="form-group p-2 mb-2">
         <label for="userSigninLogin">{{ loginAttributeLabel }}</label>
         <input
             name="login"
             type="text"
             class="form-control"
             id="userSigninLogin"
-            placeholder="Enter your {{ loginAttributeLabel|lower }}" />
+            placeholder="Adja meg {{ loginAttributeLabel|lower }}ét" />
     </div>
 
-    <div class="form-group">
-        <label for="userSigninPassword">Password</label>
+    <div class="form-group p-2 mb-2">
+        <label for="userSigninPassword">Jelszó</label>
         <input
             name="password"
             type="password"
             class="form-control"
             id="userSigninPassword"
-            placeholder="Enter your password" />
+            placeholder="Adja meg jelszavát!" />
     </div>
 
     {% if rememberLoginMode == 'ask' %}
-    <div class="form-group">
+    <div class="form-group p-2 mb-2">
         <div class="checkbox">
-        <label><input name="remember" type="checkbox" value="1">Stay logged in</label>
+        <label><input name="remember" type="checkbox" value="1">Bejelentkezve maradok</label>
         </div>
     </div>
     {% endif %}
 
-    <button type="submit" class="btn btn-default">Sign in</button>
+    <button type="submit" class="btn btn-block py-2 mb-3 package-btn mt-1">Belépés</button>
 
 {{ form_close() }}

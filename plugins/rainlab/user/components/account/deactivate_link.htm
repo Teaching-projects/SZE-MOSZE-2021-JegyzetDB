@@ -1,28 +1,33 @@
 <a
     href="javascript:;"
     onclick="$('#accountDeactivateForm').toggle()">
-    Deactivate account
+    <button type="button" class="btn btn-danger py-2 mb-3">
+        Felhasználnói fiók deaktiválása
+    </button>
+    
 </a>
 
 <div id="accountDeactivateForm" style="display: none">
     {{ form_ajax('onDeactivate') }}
         <hr />
-        <h3>Deactivate your account?</h3>
+        <h3>Deaktiválja fiókját?</h3>
         <p>
-            Your account will be disabled and your details removed from the site.
-            You can reactivate your account any time by signing back in.
+            Felhasználói fiókja és adatai törölve lesznek.
         </p>
-        <div class="form-group">
-            <label for="accountDeletePassword">To continue, please enter your password:</label>
+        <div class="form-group p-2 mb-2">
+            <label for="accountDeletePassword">Folytatáshoz adja meg jelszavát:</label>
             <input name="password" type="password" class="form-control" id="accountDeletePassword" />
         </div>
         <button type="submit" class="btn btn-danger">
-            Confirm Deactivate Account
+            Deaktiválás megerősítése
         </button>
         <a
             href="javascript:;"
             onclick="$('#accountDeactivateForm').toggle()">
-            I changed my mind
+            <button type="buton" class="btn btn-success">
+                Meggondoltam magam
+            </button>
+            
         </a>
     {{ form_close() }}
 </div>

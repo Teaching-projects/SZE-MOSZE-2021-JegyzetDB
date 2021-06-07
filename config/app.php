@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'http://jegyzet.igenyeshonlap.hu/',
+    'url' => 'https://jegyzet.igenyeshonlap.hu/',
 
     /*
     |--------------------------------------------------------------------------
@@ -107,7 +107,7 @@ return [
     |
     */
 
-    'key' => 'ln8uq1wjoyonqiialnmrj0jtsx9hxkmk',
+    'key' => 'eiakasr9bwv7xvib2i96qmfzbq8mzxiy',
 
     'cipher' => 'AES-256-CBC',
 

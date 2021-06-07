@@ -1,39 +1,43 @@
 [
     {
         "name": "composer/installers",
-        "version": "v1.6.0",
-        "version_normalized": "1.6.0.0",
+        "version": "dev-main",
+        "version_normalized": "dev-main",
         "source": {
             "type": "git",
             "url": "https://github.com/composer/installers.git",
-            "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b"
+            "reference": "7f3c618fcbfc787cca2bb7a127e7eb3a146c7046"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/composer/installers/zipball/cfcca6b1b60bc4974324efb5783c13dca6932b5b",
-            "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+            "url": "https://api.github.com/repos/composer/installers/zipball/7f3c618fcbfc787cca2bb7a127e7eb3a146c7046",
+            "reference": "7f3c618fcbfc787cca2bb7a127e7eb3a146c7046",
             "shasum": ""
         },
         "require": {
-            "composer-plugin-api": "^1.0"
+            "composer-plugin-api": "^1.0 || ^2.0"
         },
         "replace": {
             "roundcube/plugin-installer": "*",
             "shama/baton": "*"
         },
         "require-dev": {
-            "composer/composer": "1.0.*@dev",
-            "phpunit/phpunit": "^4.8.36"
+            "composer/composer": "1.6.* || ^2.0",
+            "composer/semver": "^1 || ^3",
+            "phpstan/phpstan": "^0.12.55",
+            "phpstan/phpstan-phpunit": "^0.12.16",
+            "symfony/phpunit-bridge": "^4.2 || ^5",
+            "symfony/process": "^2.3"
         },
-        "time": "2018-08-27T06:10:37+00:00",
+        "time": "2020-12-08T15:13:21+00:00",
         "type": "composer-plugin",
         "extra": {
             "class": "Composer\\Installers\\Plugin",
             "branch-alias": {
-                "dev-master": "1.0-dev"
+                "dev-main": "1.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "Composer\\Installers\\": "src/Composer/Installers"
@@ -61,6 +65,7 @@
             "Kanboard",
             "Lan Management System",
             "MODX Evo",
+            "MantisBT",
             "Mautic",
             "Maya",
             "OXID",
@@ -69,6 +74,7 @@
             "RadPHP",
             "SMF",
             "Thelia",
+            "Whmcs",
             "WolfCMS",
             "agl",
             "aimeos",
@@ -91,6 +97,7 @@
             "installer",
             "itop",
             "joomla",
+            "known",
             "kohana",
             "laravel",
             "lavalite",
@@ -113,6 +120,7 @@
             "shopware",
             "silverstripe",
             "sydes",
+            "sylius",
             "symfony",
             "typo3",
             "wordpress",

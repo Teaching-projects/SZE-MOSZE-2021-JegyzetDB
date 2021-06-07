@@ -1,14 +1,14 @@
 <p class="lead">
-    <strong>Lost your password?</strong> No problem! Enter your email address to verify your account.
+    <strong>Elfelejtette jelszavát?</strong> Semmi probléma! Adja meg email címét, hogy azonosítani tudjuk fiókját
 </p>
 
 <form
     data-request="{{ __SELF__ }}::onRestorePassword"
     data-request-update="'{{ __SELF__ }}::reset': '#partialUserResetForm'">
-    <div class="form-group">
+    <div class="form-group p-2 mb-2">
         <label for="userRestoreEmail">Email</label>
-        <input name="email" type="email" class="form-control" id="userRestoreEmail" placeholder="Enter your email">
+        <input name="email" type="email" class="form-control" id="userRestoreEmail" placeholder="Adja meg email címét">
     </div>
 
-    <button type="submit" class="btn btn-default">Restore password</button>
+    <button type="submit" class="btn btn-success mt-2">Jelszó visszaállítása</button>
 </form>
