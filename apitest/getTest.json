@@ -1,0 +1,20 @@
+https: //jegyzet.igenyeshonlap.hu/api/v1/note/100
+    We will use GET method here.
+RESPONSE: {
+    "status_code": 200,
+    "message": "success",
+    "data": [{
+        "id": "100",
+        "title": "Hundred Years",
+        "author": "David Becham",
+        "appearance": null,
+        "is_pdf": "0",
+        "deleted_at": null,
+        "is_order": "0",
+        "slug": "",
+        "created_at": "2021-05-28 21:12:07",
+        "updated_at": "2021-05-28 21:12:07",
+        "faculty": null,
+        "subject": null
+    }]
+}

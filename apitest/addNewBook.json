@@ -1,0 +1,21 @@
+{
+    "id": "100",
+    "title": "Hundred Years",
+    "author": "David Becham",
+    "appearance": 2021,
+    "is_pdf": "0",
+    "deleted_at": null,
+    "is_order": "0",
+    "slug": "hundred-years",
+    "created_at": null,
+    "updated_at": null,
+    "faculty": "sport",
+    "subject": "sport"
+}
+
+{
+    "status_code": 201,
+    "message": "created",
+    "data": {
+        "id": 100
+    }
