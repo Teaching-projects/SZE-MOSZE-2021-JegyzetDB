@@ -1,0 +1,13 @@
+1623072342a:1:{s:9:"kosar.htm";a:11:{s:8:"fileName";s:9:"kosar.htm";s:7:"content";s:189:"title = "Kosár"
+url = "/kosar"
+layout = "default"
+is_hidden = 0
+
+[cartContainer]
+productPage = "webshop"
+returnPage = "kosar"
+
+[session]
+security = "all"
+==
+{% component 'cartContainer' %}";s:5:"mtime";i:1623068828;s:6:"markup";s:31:"{% component 'cartContainer' %}";s:4:"code";N;s:5:"title";s:6:"Kosár";s:3:"url";s:6:"/kosar";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:13:"cartContainer";a:2:{s:11:"productPage";s:7:"webshop";s:10:"returnPage";s:5:"kosar";}s:7:"session";a:1:{s:8:"security";s:3:"all";}}}

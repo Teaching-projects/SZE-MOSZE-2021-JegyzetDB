@@ -1,0 +1,12 @@
+1623072342a:1:{s:8:"fiok.htm";a:11:{s:8:"fileName";s:8:"fiok.htm";s:7:"content";s:162:"title = "Fiók"
+url = "/fiok"
+layout = "default"
+is_hidden = 0
+
+[userProfile]
+productPage = "webshop"
+
+[session]
+security = "all"
+==
+{% component 'userProfile' %}";s:5:"mtime";i:1623068848;s:6:"markup";s:29:"{% component 'userProfile' %}";s:4:"code";N;s:5:"title";s:5:"Fiók";s:3:"url";s:5:"/fiok";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"userProfile";a:1:{s:11:"productPage";s:7:"webshop";}s:7:"session";a:1:{s:8:"security";s:3:"all";}}}

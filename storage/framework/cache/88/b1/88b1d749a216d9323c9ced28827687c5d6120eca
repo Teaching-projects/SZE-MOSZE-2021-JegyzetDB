@@ -1,0 +1,44 @@
+1623072342a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:884:"==
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-footer text-muted">
+  <!-- Section: Social media -->
+  <div class="container">
+  	<div class="row d-flex justify-content-center">
+  		<div class="col-6 text-center text-white">
+  			<h1 class="font-weight-bold bottom-border p-3">Elérhetőség</h1>
+  			<p class="font-weight-bold mt-3">Cím: 9026 Győr, Egyetem tér 1.</p>
+  			<p class="font-weight-bold">Tel: +36 96/503-457</p>
+  			<p class="font-weight-bold">Fax: +36 96/503-458 </p>
+  			<p class="font-weight-bold mb-3">Email: info@univgyor.hu</p>
+  		</div>
+  	</div>
+  </div>
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->";s:5:"mtime";i:1623066867;s:6:"markup";s:881:"<!-- Footer -->
+<footer class="text-center text-lg-start bg-footer text-muted">
+  <!-- Section: Social media -->
+  <div class="container">
+  	<div class="row d-flex justify-content-center">
+  		<div class="col-6 text-center text-white">
+  			<h1 class="font-weight-bold bottom-border p-3">Elérhetőség</h1>
+  			<p class="font-weight-bold mt-3">Cím: 9026 Győr, Egyetem tér 1.</p>
+  			<p class="font-weight-bold">Tel: +36 96/503-457</p>
+  			<p class="font-weight-bold">Fax: +36 96/503-458 </p>
+  			<p class="font-weight-bold mb-3">Email: info@univgyor.hu</p>
+  		</div>
+  	</div>
+  </div>
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

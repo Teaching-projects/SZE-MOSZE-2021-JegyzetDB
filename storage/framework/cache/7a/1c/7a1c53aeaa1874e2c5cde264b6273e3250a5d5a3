@@ -1,0 +1,67 @@
+1623072342a:1:{s:20:"kapcsolati-urlap.htm";a:11:{s:8:"fileName";s:20:"kapcsolati-urlap.htm";s:7:"content";s:1037:"title = "Kapcsolati űrlap"
+url = "/kapcsolati-urlap"
+layout = "default"
+is_hidden = 0
+
+[contactform]
+
+[session]
+security = "all"
+==
+Valami ilyesmi design: https://colorlib.com/wp/bootstrap-contact-form/
+
+<form data-request="contactform::onSend" class="contact-form" data-request-validate data-request-flash>
+    <label>Your name</label>
+    <input type="text" name="name">
+    <span data-validate-for="name">Hey! How about inputing your name.</span>
+
+    <label>Your email</label>
+    <input type="email" name="email">
+    <span data-validate-for="email"></span>
+
+
+    <label>Your message</label>
+    <textarea name="content"></textarea>
+
+    <button type="submit" data-attach-loading>Send</button>
+
+    <div class="alert alert-danger" data-validate-error>
+        <p data-message></p>
+    </div>
+
+    <div class="flash error">
+        Ooops. Something went wrong please check the requiered fields.
+    </div>
+
+    <div class="flash success">
+        Your message has been sent. Thank you.
+    </div>
+</form>";s:5:"mtime";i:1623068833;s:6:"markup";s:904:"Valami ilyesmi design: https://colorlib.com/wp/bootstrap-contact-form/
+
+<form data-request="contactform::onSend" class="contact-form" data-request-validate data-request-flash>
+    <label>Your name</label>
+    <input type="text" name="name">
+    <span data-validate-for="name">Hey! How about inputing your name.</span>
+
+    <label>Your email</label>
+    <input type="email" name="email">
+    <span data-validate-for="email"></span>
+
+
+    <label>Your message</label>
+    <textarea name="content"></textarea>
+
+    <button type="submit" data-attach-loading>Send</button>
+
+    <div class="alert alert-danger" data-validate-error>
+        <p data-message></p>
+    </div>
+
+    <div class="flash error">
+        Ooops. Something went wrong please check the requiered fields.
+    </div>
+
+    <div class="flash success">
+        Your message has been sent. Thank you.
+    </div>
+</form>";s:4:"code";N;s:5:"title";s:17:"Kapcsolati űrlap";s:3:"url";s:17:"/kapcsolati-urlap";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"contactform";a:0:{}s:7:"session";a:1:{s:8:"security";s:3:"all";}}}

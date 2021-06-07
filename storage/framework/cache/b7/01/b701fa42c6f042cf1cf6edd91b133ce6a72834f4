@@ -1,0 +1,107 @@
+1623072342a:1:{s:10:"profil.htm";a:12:{s:8:"fileName";s:10:"profil.htm";s:7:"content";s:1282:"title = "Profilom"
+url = "/profilom"
+layout = "default"
+is_hidden = 0
+
+[account]
+redirect = "profil"
+paramCode = "code"
+forceSecure = 0
+requirePassword = 0
+
+[resetPassword]
+paramCode = "code"
+
+[session]
+security = "all"
+redirect = "profil"
+==
+{% if not user %}
+<div class="container my-5">
+    <div class="row">
+
+        <div class="col-md-6 col-lg-6 mb-2">
+            <h3>Belépés</h3>
+            {% partial account ~ '::signin' %}
+        </div>
+
+        <div class="col-md-6 col-lg-6 mb-5 mb-2">
+            {% partial account ~ '::register' %}
+        </div>
+
+    </div>
+    
+    <div class="row">
+    	<div class="col-lg-6 col-sm-12">
+			<div id="partialUserResetForm">
+			    {% if resetPassword.code == null %}
+			        {% partial resetPassword ~ '::restore' %}
+			    {% else %}
+			        {% partial resetPassword ~ '::reset' %}
+			    {% endif %}
+			</div>    		
+    	</div>
+    </div>
+</div>
+
+{% else %}
+<div class="container my-5">
+	<div class="row">
+		<div class="col-lg-12">
+			    {% partial account ~ '::activation_check' %}
+		</div>
+		<div class="col-lg-12">
+			{% partial account ~ '::update' %}
+		</div>
+		<div class="col-lg-12">
+			{% partial account ~ '::deactivate_link' %}
+		</div>
+	</div>
+</div>
+
+
+{% endif %}";s:5:"mtime";i:1623066867;s:6:"markup";s:1039:"{% if not user %}
+<div class="container my-5">
+    <div class="row">
+
+        <div class="col-md-6 col-lg-6 mb-2">
+            <h3>Belépés</h3>
+            {% partial account ~ '::signin' %}
+        </div>
+
+        <div class="col-md-6 col-lg-6 mb-5 mb-2">
+            {% partial account ~ '::register' %}
+        </div>
+
+    </div>
+    
+    <div class="row">
+    	<div class="col-lg-6 col-sm-12">
+			<div id="partialUserResetForm">
+			    {% if resetPassword.code == null %}
+			        {% partial resetPassword ~ '::restore' %}
+			    {% else %}
+			        {% partial resetPassword ~ '::reset' %}
+			    {% endif %}
+			</div>    		
+    	</div>
+    </div>
+</div>
+
+{% else %}
+<div class="container my-5">
+	<div class="row">
+		<div class="col-lg-12">
+			    {% partial account ~ '::activation_check' %}
+		</div>
+		<div class="col-lg-12">
+			{% partial account ~ '::update' %}
+		</div>
+		<div class="col-lg-12">
+			{% partial account ~ '::deactivate_link' %}
+		</div>
+	</div>
+</div>
+
+
+{% endif %}";s:4:"code";N;s:5:"title";s:8:"Profilom";s:3:"url";s:9:"/profilom";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"account";a:4:{s:8:"redirect";s:6:"profil";s:9:"paramCode";s:4:"code";s:11:"forceSecure";s:1:"0";s:15:"requirePassword";s:1:"0";}s:13:"resetPassword";a:1:{s:9:"paramCode";s:4:"code";}s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:6:"profil";}}}

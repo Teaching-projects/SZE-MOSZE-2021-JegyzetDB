@@ -1,0 +1,13 @@
+1623072342a:1:{s:11:"webshop.htm";a:11:{s:8:"fileName";s:11:"webshop.htm";s:7:"content";s:212:"title = "webshop"
+url = "/webshop/:slug"
+layout = "default"
+is_hidden = 0
+
+[shopProductsDetails]
+slug = "{{ :slug }}"
+productsPage = "products"
+
+[session]
+security = "all"
+==
+{% component 'shopProductsDetails' %}";s:5:"mtime";i:1623068815;s:6:"markup";s:37:"{% component 'shopProductsDetails' %}";s:4:"code";N;s:5:"title";s:7:"webshop";s:3:"url";s:14:"/webshop/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:19:"shopProductsDetails";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"productsPage";s:8:"products";}s:7:"session";a:1:{s:8:"security";s:3:"all";}}}

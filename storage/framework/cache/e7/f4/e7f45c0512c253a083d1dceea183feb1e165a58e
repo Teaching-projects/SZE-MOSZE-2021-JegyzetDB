@@ -1,0 +1,54 @@
+1623072342a:1:{s:13:"site/head.htm";a:6:{s:8:"fileName";s:13:"site/head.htm";s:7:"content";s:1023:"==
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ this.page.description }}">
+    <meta name="title" content="{{ this.page.title }}">
+    <meta name="keywords" content="{{ this.page.keywords }}">
+    <meta property="og:title" content="{{ this.page.title }}">
+    <meta property="og:description" content="{{ this.page.description }}">
+
+    <link rel="icon" type="image/png" href="#">
+
+
+    <link href="{{ [
+            'assets/css/bootstrap.min.css',
+            'assets/css/all.min.css',
+            'assets/css/bootstrapselect.css',
+            'assets/scss/app.scss',
+        ]|theme }}" rel="stylesheet"> {% styles %}
+
+    <title>Jegyzetszerver - {% placeholder title default %}{{ this.page.title }}{% endplaceholder %}</title>
+</head>
+
+{% flash %}
+<p data-control="flash-message" class="flash-message fade {{ type }}" data-interval="5">
+    {{ message }}
+</p>
+{% endflash %}";s:5:"mtime";i:1623066867;s:6:"markup";s:1019:"<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ this.page.description }}">
+    <meta name="title" content="{{ this.page.title }}">
+    <meta name="keywords" content="{{ this.page.keywords }}">
+    <meta property="og:title" content="{{ this.page.title }}">
+    <meta property="og:description" content="{{ this.page.description }}">
+
+    <link rel="icon" type="image/png" href="#">
+
+
+    <link href="{{ [
+            'assets/css/bootstrap.min.css',
+            'assets/css/all.min.css',
+            'assets/css/bootstrapselect.css',
+            'assets/scss/app.scss',
+        ]|theme }}" rel="stylesheet"> {% styles %}
+
+    <title>Jegyzetszerver - {% placeholder title default %}{{ this.page.title }}{% endplaceholder %}</title>
+</head>
+
+{% flash %}
+<p data-control="flash-message" class="flash-message fade {{ type }}" data-interval="5">
+    {{ message }}
+</p>
+{% endflash %}";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

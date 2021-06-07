@@ -1,0 +1,91 @@
+1623072342a:1:{s:13:"kapcsolat.htm";a:11:{s:8:"fileName";s:13:"kapcsolat.htm";s:7:"content";s:1674:"title = "Kapcsolat"
+url = "/kapcsolat"
+layout = "default"
+is_hidden = 0
+
+[contactform]
+
+[session]
+security = "all"
+==
+<div class="container">
+	<h1 class="text-center mt-4">Kérdéseivel keressen minket bátran!</h1>
+	
+		<form data-request="contactform::onSend" class="contact-form" data-request-validate data-request-flash>
+			<div class="row d-flex justify-content-center">
+	<div class="col-8">
+    <label>Név</label>
+	<div class="input-group my-2">
+	  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required name="name">
+	</div>
+
+		</div>
+		<div class="col-8">
+    <label>Email cím</label>
+	<div class="input-group my-2">
+	  <input type="email" name="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" >
+	  
+	</div>
+	<span data-validate-for="email"></span>
+		</div>
+		<div class="col-8">
+    <label>Tárgy</label>
+	<div class="input-group my-2">
+	  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+	</div>
+		</div>
+	<div class="col-8">
+		<label>Üzenet</label>
+		<div class="form-floating">
+		<textarea class="form-control" placeholder="Üzenet" row="4" id="floatingTextarea" style="height: 100px" required></textarea>
+		</div>
+	</div>
+	<div class="col-8 d-flex justify-content-center mb-4">
+    <button type="submit" data-attach-loading class="btn btn-secondary my-3">Küldés</button>
+    </div>
+    <div class="alert alert-danger" data-validate-error>
+        <p data-message></p>
+    </div>
+    	</form>
+	</div>
+</div>";s:5:"mtime";i:1623068837;s:6:"markup";s:1556:"<div class="container">
+	<h1 class="text-center mt-4">Kérdéseivel keressen minket bátran!</h1>
+	
+		<form data-request="contactform::onSend" class="contact-form" data-request-validate data-request-flash>
+			<div class="row d-flex justify-content-center">
+	<div class="col-8">
+    <label>Név</label>
+	<div class="input-group my-2">
+	  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required name="name">
+	</div>
+
+		</div>
+		<div class="col-8">
+    <label>Email cím</label>
+	<div class="input-group my-2">
+	  <input type="email" name="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" >
+	  
+	</div>
+	<span data-validate-for="email"></span>
+		</div>
+		<div class="col-8">
+    <label>Tárgy</label>
+	<div class="input-group my-2">
+	  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+	</div>
+		</div>
+	<div class="col-8">
+		<label>Üzenet</label>
+		<div class="form-floating">
+		<textarea class="form-control" placeholder="Üzenet" row="4" id="floatingTextarea" style="height: 100px" required></textarea>
+		</div>
+	</div>
+	<div class="col-8 d-flex justify-content-center mb-4">
+    <button type="submit" data-attach-loading class="btn btn-secondary my-3">Küldés</button>
+    </div>
+    <div class="alert alert-danger" data-validate-error>
+        <p data-message></p>
+    </div>
+    	</form>
+	</div>
+</div>";s:4:"code";N;s:5:"title";s:9:"Kapcsolat";s:3:"url";s:10:"/kapcsolat";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"contactform";a:0:{}s:7:"session";a:1:{s:8:"security";s:3:"all";}}}

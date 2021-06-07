@@ -1,0 +1,128 @@
+1623072342a:1:{s:22:"jegyzet-feltoltese.htm";a:12:{s:8:"fileName";s:22:"jegyzet-feltoltese.htm";s:7:"content";s:2613:"title = "Jegyzet feltöltése"
+url = "/jegyzet-feltoltese"
+layout = "default"
+description = "Jegyzet feltöltése aloldal"
+is_hidden = 0
+
+[uploadnote]
+
+[session]
+security = "all"
+==
+{% if not user %}
+
+<h3 class="text-center my-1 pt-5" style="height: 550px;">Ez az űrlapot csak bejelentkezett oktatók érhetik el.</h3>
+
+{% endif %}
+
+{% if user %}
+
+<div class="container my-5">
+	<h1 class="font-weight-bold text-center my-3">Jegyzet feltöltési űrlap</h1>
+	<form data-request="onSubmit" data-request-files data-request-flash>  
+
+    <input type="hidden" name="_handler" value="onSave">
+    
+    {{ form_token() }}
+    {{ form_sessionKey() }}
+
+    <div class="row d-flex justify-content-center">
+	<div class="col-8 my-2">
+		<input class="form-control" type="text" placeholder="Cím" name="title">
+	</div>
+	<div class="col-8 my-2">
+		<input class="form-control" type="text" placeholder="Szerző" name="author">
+	</div>
+	<div class="col-8 my-2">
+		<input class="form-control" type="text" placeholder="Megjelenés éve" name="appearance">
+	</div>
+	<div class="col-8 my-2">
+		<input class="form-control" type="text" placeholder="Tárgy" name="subject">
+	</div>
+	<div class="col-8 my-2">
+		<input class="form-control" type="text" placeholder="Kar" name="faculty">
+	</div>
+	<div class="col-8 my-2">
+		<label for="floatingTextarea">Leírás</label>
+		<div class="form-floating">
+			<textarea class="form-control" placeholder="leírás" style="height: 100px" name="description"></textarea>
+		</div>
+	</div>
+	<div class="col-8 my-2">
+		<div class="custom-control custom-switch">
+    	<label class="custom-control-label checkbox-set-value" for="customSwitch1">Ez a jegyzet egy PDF?</label>
+        <input type="checkbox" class="custom-control-input checkbox-set-value" id="customSwitch1" name="is_pdf" value="" name="is_pdf">
+    </div>
+    <label class="custom-control-label checkbox-set-value my-2">PDF feltöltése:</label>
+    <input type="file" name="pdf_file" accept="pdf" placeholder="PDF fájl" class="ms-3"> <br>
+    <label class="custom-control-label checkbox-set-value">Borítókép feltöltése:</label>
+    <input type="file" class="ms-3 my-2" name="image" accept="image/*" data-request="onImageUpload" placeholder="Borítókép" data-request-files data-request-flash>
+	</div>
+	<div id="imageResult" class="preview-image-div">Nincs előnézet</div>
+    </br>
+    <div class="col-4 d-flex justify-content-center">
+		<button type="submit" class="btn btn-primary my-5 text-center">Jegyzet beküldése</button>
+	</div>
+	</div>
+	</form>
+</div>
+
+{% endif %}";s:5:"mtime";i:1623068845;s:6:"markup";s:2431:"{% if not user %}
+
+<h3 class="text-center my-1 pt-5" style="height: 550px;">Ez az űrlapot csak bejelentkezett oktatók érhetik el.</h3>
+
+{% endif %}
+
+{% if user %}
+
+<div class="container my-5">
+	<h1 class="font-weight-bold text-center my-3">Jegyzet feltöltési űrlap</h1>
+	<form data-request="onSubmit" data-request-files data-request-flash>  
+
+    <input type="hidden" name="_handler" value="onSave">
+    
+    {{ form_token() }}
+    {{ form_sessionKey() }}
+
+    <div class="row d-flex justify-content-center">
+	<div class="col-8 my-2">
+		<input class="form-control" type="text" placeholder="Cím" name="title">
+	</div>
+	<div class="col-8 my-2">
+		<input class="form-control" type="text" placeholder="Szerző" name="author">
+	</div>
+	<div class="col-8 my-2">
+		<input class="form-control" type="text" placeholder="Megjelenés éve" name="appearance">
+	</div>
+	<div class="col-8 my-2">
+		<input class="form-control" type="text" placeholder="Tárgy" name="subject">
+	</div>
+	<div class="col-8 my-2">
+		<input class="form-control" type="text" placeholder="Kar" name="faculty">
+	</div>
+	<div class="col-8 my-2">
+		<label for="floatingTextarea">Leírás</label>
+		<div class="form-floating">
+			<textarea class="form-control" placeholder="leírás" style="height: 100px" name="description"></textarea>
+		</div>
+	</div>
+	<div class="col-8 my-2">
+		<div class="custom-control custom-switch">
+    	<label class="custom-control-label checkbox-set-value" for="customSwitch1">Ez a jegyzet egy PDF?</label>
+        <input type="checkbox" class="custom-control-input checkbox-set-value" id="customSwitch1" name="is_pdf" value="" name="is_pdf">
+    </div>
+    <label class="custom-control-label checkbox-set-value my-2">PDF feltöltése:</label>
+    <input type="file" name="pdf_file" accept="pdf" placeholder="PDF fájl" class="ms-3"> <br>
+    <label class="custom-control-label checkbox-set-value">Borítókép feltöltése:</label>
+    <input type="file" class="ms-3 my-2" name="image" accept="image/*" data-request="onImageUpload" placeholder="Borítókép" data-request-files data-request-flash>
+	</div>
+	<div id="imageResult" class="preview-image-div">Nincs előnézet</div>
+    </br>
+    <div class="col-4 d-flex justify-content-center">
+		<button type="submit" class="btn btn-primary my-5 text-center">Jegyzet beküldése</button>
+	</div>
+	</div>
+	</form>
+</div>
+
+{% endif %}";s:4:"code";N;s:5:"title";s:20:"Jegyzet feltöltése";s:3:"url";s:19:"/jegyzet-feltoltese";s:6:"layout";s:7:"default";s:11:"description";s:28:"Jegyzet feltöltése aloldal";s:9:"is_hidden";s:1:"0";s:10:"uploadnote";a:0:{}s:7:"session";a:1:{s:8:"security";s:3:"all";}}}

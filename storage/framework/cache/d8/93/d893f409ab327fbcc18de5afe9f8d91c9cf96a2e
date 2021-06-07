@@ -1,5 +1,85 @@
-1617898986a:1:{s:11:"jegyzet.htm";a:9:{s:8:"fileName";s:11:"jegyzet.htm";s:7:"content";s:77:"title = "jegyzet"
+1623072342a:1:{s:11:"jegyzet.htm";a:12:{s:8:"fileName";s:11:"jegyzet.htm";s:7:"content";s:1621:"title = "jegyzet"
 url = "/jegyzet/:slug?"
 layout = "default"
+description = "Egy jegyzet saját oldala"
 is_hidden = 0
-==";s:5:"mtime";i:1617800261;s:6:"markup";s:0:"";s:4:"code";N;s:5:"title";s:7:"jegyzet";s:3:"url";s:15:"/jegyzet/:slug?";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}
+
+[builderDetails]
+modelClass = "Szb\Jegyzet\Models\Note"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "title"
+notFoundMessage = "Record not found"
+
+[session]
+security = "all"
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+<div class="container">
+	<div class="row d-flex justify-content-center my-5">
+		<div class="col-12 d-flex justify-content-center">
+			{% if record %}
+			<div class="card mb-3" style="max-width: 1000px;">
+				<div class="row g-0">
+					<div class="col-md-4">
+						<img src="/themes/jegyzetszerver/assets/images/Programozás%20I.-II..jpg" class="img-fluid" alt="...">
+					</div>
+					<div class="col-md-8 d-flex align-items-center">
+						<div class="card-body">
+							<h5 class="card-title">{{ record.title }}</h5>
+							<p class="card-text">Szerző: {{ record.author }}</p>
+							<p class="card-text">{% if record.is_pdf == 1 %}
+								PDF formátumban elérhető: Igen <br>
+								{% else %}
+								PDF formátumban elérhető: Nem <br>
+								{% endif %}</p>
+							<p class="card-text">Tárgy: {{ record.subject }}</p>
+							<p class="card-text">Kar:  {{ record.faculty }}</p>
+							<p><a href="{{record.pdf_file.path }}">PDF jegyzet megtekintése</a></p>
+								{% else %}
+									{{ notFoundMessage }}
+								{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>";s:5:"mtime";i:1623068842;s:6:"markup";s:1299:"{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+<div class="container">
+	<div class="row d-flex justify-content-center my-5">
+		<div class="col-12 d-flex justify-content-center">
+			{% if record %}
+			<div class="card mb-3" style="max-width: 1000px;">
+				<div class="row g-0">
+					<div class="col-md-4">
+						<img src="/themes/jegyzetszerver/assets/images/Programozás%20I.-II..jpg" class="img-fluid" alt="...">
+					</div>
+					<div class="col-md-8 d-flex align-items-center">
+						<div class="card-body">
+							<h5 class="card-title">{{ record.title }}</h5>
+							<p class="card-text">Szerző: {{ record.author }}</p>
+							<p class="card-text">{% if record.is_pdf == 1 %}
+								PDF formátumban elérhető: Igen <br>
+								{% else %}
+								PDF formátumban elérhető: Nem <br>
+								{% endif %}</p>
+							<p class="card-text">Tárgy: {{ record.subject }}</p>
+							<p class="card-text">Kar:  {{ record.faculty }}</p>
+							<p><a href="{{record.pdf_file.path }}">PDF jegyzet megtekintése</a></p>
+								{% else %}
+									{{ notFoundMessage }}
+								{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>";s:4:"code";N;s:5:"title";s:7:"jegyzet";s:3:"url";s:15:"/jegyzet/:slug?";s:6:"layout";s:7:"default";s:11:"description";s:25:"Egy jegyzet saját oldala";s:9:"is_hidden";s:1:"0";s:14:"builderDetails";a:5:{s:10:"modelClass";s:23:"Szb\Jegyzet\Models\Note";s:15:"identifierValue";s:11:"{{ :slug }}";s:14:"modelKeyColumn";s:4:"slug";s:13:"displayColumn";s:5:"title";s:15:"notFoundMessage";s:16:"Record not found";}s:7:"session";a:1:{s:8:"security";s:3:"all";}}}

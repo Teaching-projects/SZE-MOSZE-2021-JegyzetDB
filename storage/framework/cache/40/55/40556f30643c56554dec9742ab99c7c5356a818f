@@ -1,0 +1,41 @@
+1623072342a:1:{s:12:"termekek.htm";a:13:{s:8:"fileName";s:12:"termekek.htm";s:7:"content";s:640:"title = "Termékek"
+url = "/products"
+layout = "default"
+is_hidden = 0
+
+[shopProductsList]
+categoryFilter = "{{ :category }}"
+scope = "showItems"
+limitType = "paginate"
+take = 6
+orderBy = "name"
+sort = "asc"
+productPage = "webshop"
+categoryPage = "kezdolap"
+showCategoriesFilter = 1
+showSearchBar = 1
+showQuickAdd = 1
+typeCategoriesFilter = "dropdown"
+
+[cartContainer]
+productPage = "webshop"
+returnPage = "kosar"
+
+[cartButton]
+cartPage = "kosar"
+colorBG = "#C43730"
+color = "#FFFFFF"
+position = "top-right"
+
+[session]
+security = "all"
+==
+{% component 'shopProductsList' %}
+
+{% component 'cartContainer' %}
+
+{% component 'cartButton' %}";s:5:"mtime";i:1623068820;s:6:"markup";s:101:"{% component 'shopProductsList' %}
+
+{% component 'cartContainer' %}
+
+{% component 'cartButton' %}";s:4:"code";N;s:5:"title";s:9:"Termékek";s:3:"url";s:9:"/products";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:16:"shopProductsList";a:12:{s:14:"categoryFilter";s:15:"{{ :category }}";s:5:"scope";s:9:"showItems";s:9:"limitType";s:8:"paginate";s:4:"take";s:1:"6";s:7:"orderBy";s:4:"name";s:4:"sort";s:3:"asc";s:11:"productPage";s:7:"webshop";s:12:"categoryPage";s:8:"kezdolap";s:20:"showCategoriesFilter";s:1:"1";s:13:"showSearchBar";s:1:"1";s:12:"showQuickAdd";s:1:"1";s:20:"typeCategoriesFilter";s:8:"dropdown";}s:13:"cartContainer";a:2:{s:11:"productPage";s:7:"webshop";s:10:"returnPage";s:5:"kosar";}s:10:"cartButton";a:4:{s:8:"cartPage";s:5:"kosar";s:7:"colorBG";s:7:"#C43730";s:5:"color";s:7:"#FFFFFF";s:8:"position";s:9:"top-right";}s:7:"session";a:1:{s:8:"security";s:3:"all";}}}

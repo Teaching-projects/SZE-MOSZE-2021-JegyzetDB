@@ -1,0 +1,78 @@
+1623072342a:1:{s:15:"site/header.htm";a:6:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1658:"==
+<nav class="navbar navbar-expand-lg navbar-light bg-gray text-center sticky-top">
+  <div class="container-fluid">
+  	<img src="/themes/jegyzetszerver/assets/images/universitas_logo.png" class="img-fluid me-5">
+    <a class="navbar-brand text-white" href="/">Kezdőlap</a>
+    <button class="navbar-toggler my-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link text-white" href="/jegyzetek">Jegyzetek</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="/kapcsolat">Kapcsolat</a>
+      </li>
+      
+      {% if user %}
+      <li class="nav-item">
+        <a class="nav-link text-white" href="/jegyzet-feltoltese">Jegyzet feltöltés</a>
+      </li>    
+      {% endif %}
+      {% if not user %}
+      
+        <li class="nav-item"><a class="nav-link text-white" href="/profilom"> Belépés </a></li>
+        
+      {% else %}
+      
+      
+
+        <li class="nav-item px-lg-2"><a class="nav-link text-dark  nav-animation" href="/profilom"> Profilom </a></li>
+        <li class="nav-item px-lg-2"><a class="nav-link text-dark  nav-animation sign-out-item" data-request="onLogout" data-request-data="redirect: '/'"> Kijelentkezés 
+        <i class="fas fa-sign-out-alt"></i></a></li>
+
+      {% endif %}
+    </ul>
+
+    </div>
+  </div>
+</nav>";s:5:"mtime";i:1623068769;s:6:"markup";s:1655:"<nav class="navbar navbar-expand-lg navbar-light bg-gray text-center sticky-top">
+  <div class="container-fluid">
+  	<img src="/themes/jegyzetszerver/assets/images/universitas_logo.png" class="img-fluid me-5">
+    <a class="navbar-brand text-white" href="/">Kezdőlap</a>
+    <button class="navbar-toggler my-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link text-white" href="/jegyzetek">Jegyzetek</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="/kapcsolat">Kapcsolat</a>
+      </li>
+      
+      {% if user %}
+      <li class="nav-item">
+        <a class="nav-link text-white" href="/jegyzet-feltoltese">Jegyzet feltöltés</a>
+      </li>    
+      {% endif %}
+      {% if not user %}
+      
+        <li class="nav-item"><a class="nav-link text-white" href="/profilom"> Belépés </a></li>
+        
+      {% else %}
+      
+      
+
+        <li class="nav-item px-lg-2"><a class="nav-link text-dark  nav-animation" href="/profilom"> Profilom </a></li>
+        <li class="nav-item px-lg-2"><a class="nav-link text-dark  nav-animation sign-out-item" data-request="onLogout" data-request-data="redirect: '/'"> Kijelentkezés 
+        <i class="fas fa-sign-out-alt"></i></a></li>
+
+      {% endif %}
+    </ul>
+
+    </div>
+  </div>
+</nav>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}
