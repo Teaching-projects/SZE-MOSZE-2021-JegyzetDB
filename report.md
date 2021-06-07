@@ -39,19 +39,19 @@
 
 # Unit tesztek
 
-| Osztály | Publikus metódusok száma | Unit tesztelt metódusok száma | Unit tesztek száma |
-| --- | --- | --- | --- |
-| `Unit` | 4 | 2 | 8 |
-| `Hero` | 5 | 0 | 0 | 
-| ... |
+| Osztály |
+| --- | 
+| `StackTest` | 
+| `User-login` |
+| `User-auth` |
+| `UserPluginTestCase` |
 
 # Kód dokumentáció
 
-| Teljesen dokumentált osztályok | Részben dokumentált osztályok | Nem dokumentált osztályok |
+| Teljesen dokumentált osztályok | 
 | --- | --- | --- | 
-| `Jegyzet` | `User` | `JSON` | 
-| `Hero` | ... | ... |  
-| ... |
+| `Jegyzet` | `User` | 
++ used 3rd party tools
 
 
 # Mindenféle számok
