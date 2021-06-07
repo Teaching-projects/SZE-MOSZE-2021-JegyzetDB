@@ -1,7 +1,7 @@
 # SZE-MOSZE-2021-JegyzetDB
 
 Sandbox szerver:
-http://jegyzet.igenyeshonlap.hu/
+<h2>http://jegyzet.igenyeshonlap.hu/</h2>
 
 <h2>Feature-01</h2>
 <p>Jegyzetek MVC, Frontend</p>
