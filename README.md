@@ -21,3 +21,13 @@
 
 <h2>Doxygen dokumentáció </h2>
 http://note-dok.igenyeshonlap.hu/
+
+<h2>PHPUnit </h2>
+➜ composer require --dev phpunit/phpunit ^9
+
+➜ ./vendor/bin/phpunit --version
+PHPUnit 9.0.0 by Sebastian Bergmann and contributors.
+
+Run: 
+➜ ./vendor/bin/phpunit ./tests
+
