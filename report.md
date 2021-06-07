@@ -2,7 +2,7 @@
 
 | Név | Github azonosito  | Javasolt relatív érdemjegy | Becsült óra | Indoklás  | 
 | --- | ---- | --- | ------------------ | --------- |
-| Szoták Bálint | @szotbalint | 4 | 30+ | Fullstack fejlesztés, tesztelés|
+| Szoták Bálint | @szotbalint | 4 | 50+ | Fullstack fejlesztés, tesztelés, devops|
 | Pesti Richárd | @username | ... | ... | .... |
 | Rehus Ádám | @username | ... | ... | ... |
 
