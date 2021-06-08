@@ -9,8 +9,8 @@
 
 # Videók
 
- - [Gameplay](/videos/gameplay.mp4)
- - [CodeBaseDefense](/videos/codebasedefense.mp4)
+ - [Gameplay](https://youtu.be/Ojrphx-61J8)
+
 
 # Befejezett feladatok
 
