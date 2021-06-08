@@ -34,7 +34,7 @@
 | Dokumentáció (doxygen) |
 | Csomagtelepítő (Composer) .json és lock fájl beállítása |
 | Google Lighthouse mobil és dekstop speed test GH workflow segítségével automatán a sandbox szerveren |
-| Bemutató és fejlesztésről videó |
+| Gameplay és fejlesztésről videó |
 
 
 # Unit tesztek
