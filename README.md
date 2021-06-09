@@ -1,16 +1,16 @@
 # SZE-MOSZE-2021-JegyzetDB
 
 <p>
-  Feladat: Egyetemi jegyzet adatbázis megvalósítása webes környezetben.
+  <h2>Feladat</h2> Egyetemi jegyzet adatbázis megvalósítása webes környezetben.
  </p>
  
  <p>
- Feladatleírás:
+ <h2>Feladatleírás<h2/>
 Olyan webes felület megvalósítása, amelyen a hallgatók kikereshetik a tárgyakhoz tartozó irodalmat és letölthetik PDF-ben az online jegyzeteket. Az oktatók hozzá adhatják a már meglévő PDF formátumú jegyzeteket egy erre kialakított admin felületen. 
 A http://jegyzet.sze.hu/ modernebb, összetettebb formában való elkészítése.
   </p>
 
-Sandbox szerver:
+<h2>Sandbox szerver</h2>
 <h2>http://jegyzet.igenyeshonlap.hu/</h2>
 
 <h2>Feature-01</h2>
