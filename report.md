@@ -3,7 +3,7 @@
 | Név | Github azonosito  | Javasolt relatív érdemjegy | Becsült óra | Indoklás  | 
 | --- | ---- | --- | ------------------ | --------- |
 | Szoták Bálint | @szotbalint | 3 | 50+ | Fullstack fejlesztés, tesztelés, devops. Feladataiba és új ismeretek elsajátításába sok energiát fektetett, hogy alkalmazni is tudja. Csapattársait végig segítette, koordinálta a fejlesztést, tesztelést. Igyekezett megtalálni a legoptimálisabbnak tűnő megoldásokat. |
-| Pesti Richárd | @username | ... | ... | .... |
+| Pesti Richárd | @RicharDivusz | 3 | 40+ | Frontend fejlesztés, tesztelés. Weboldal felületére különböző verziók tervezése, ezek közül az optimális felület kiválasztása. Ennek létrehozása, implementálása és tesztelése. Adatbázis elemek tesztelése és integrálása frontend megjelenéssel. Csapattársait végig segítette. |
 | Rehus Ádám | @username | ... | ... | ... |
 
 
