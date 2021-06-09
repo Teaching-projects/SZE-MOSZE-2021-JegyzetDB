@@ -12,7 +12,7 @@ Sandbox szerver:
 </p>
 
 
-<h2>Docker-image</h2>
+<h2>Docker-image repo</h2>
 <p>Docker image - development environment</p>
 
 <h2>Használt technológiák, eszközök</h2>
