@@ -17,6 +17,7 @@ A http://jegyzet.sze.hu/ modernebb, összetettebb formában való elkészítése
 
 [report.md](/report.md)
 
+ - [Gameplay - Bemutató videó](https://youtu.be/Ojrphx-61J8)
 
 
 <h2>Feature-01</h2>
