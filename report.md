@@ -2,7 +2,7 @@
 
 | Név | Github azonosito  | Javasolt relatív érdemjegy | Becsült óra | Indoklás  | 
 | --- | ---- | --- | ------------------ | --------- |
-| Szoták Bálint | @szotbalint | 4 | 50+ | Fullstack fejlesztés, tesztelés, devops|
+| Szoták Bálint | @szotbalint | 3 | 50+ | Fullstack fejlesztés, tesztelés, devops. Feladataiba és új ismeretek elsajátításába sok energiát fektetett, hogy alkalmazni is tudja. Csapattársait végig segítette, koordinálta a fejlesztést, tesztelést. Igyekezett megtalálni a legoptimálisabbnak tűnő megoldásokat. |
 | Pesti Richárd | @username | ... | ... | .... |
 | Rehus Ádám | @username | ... | ... | ... |
 
@@ -28,13 +28,13 @@
 | Összetett keresés - kar, tárgy listázása adatbázisból |   
 | Jegyzet MVC alapú API létrehozása |   
 | API testing (Postman) |   
-| Kontakt form AJAX-al |   
+| Kontakt form AJAX-al, szerver oldali validálással |   
 | Automatikus deployment sandbox szerverre |
 | PHPUnit tesztkörnyezet beállítása |
 | Dokumentáció (doxygen) |
 | Csomagtelepítő (Composer) .json és lock fájl beállítása |
 | Google Lighthouse mobil és dekstop speed test GH workflow segítségével automatán a sandbox szerveren |
-| Gameplay és fejlesztésről videó |
+| Gameplay és fejlesztésről részletes bemutató videó (8 perc) |
 
 
 # Unit tesztek
@@ -66,11 +66,11 @@ Olyanok, amik nem a tárgy anyaga, de muszáj/hasznos volt elsajátítani:
  - PHPUnit
  - Deployment
  - Csomagkezelés (Composer)
- - API használat
  - API tesztelés Postman-nel
  - Lighthouse github action page speed test
  - MVC design pattern
- - 3rd party toolok, libraryk (Bootstrap, jQuery..)
+ - 3rd party toolok, libraryk (Bootstrap, jQuery, BootstrapSelect.js..)
+ - Frontend Twig-Symfony
 
 # Feedback (optional)
  
